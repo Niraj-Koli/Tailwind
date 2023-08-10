@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Visibility</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-slate-700">01</div>
+            <div class="invisible bg-rose-500">02</div>
+            <div class="bg-cyan-400">03</div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-slate-700">01</div>
+            <div class="visible bg-rose-500">02</div>
+            <div class="bg-cyan-400">03</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Invoice</th>
+                    <th>Client</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>Kaizer</td>
+                    <td>$2,000.00</td>
+                </tr>
+                <tr class="collapse">
+                    <td>101</td>
+                    <td>Vivy</td>
+                    <td>$545.00</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Dante</td>
+                    <td>$10,000.25</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
