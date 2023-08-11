@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Flex</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="flex flex-row">
+            <div class="basis-1 bg-slate-600 mx-8">1</div>
+            <div class="basis-1 bg-slate-600 mx-8">2</div>
+            <div class="basis-10 bg-slate-600 mx-8">3</div>
+        </div>
+        <div class="flex flex-row-reverse">
+            <div class="bg-cyan-400 mx-4 w-24">1</div>
+            <div class="bg-cyan-400 mx-4 w-24">2</div>
+            <div class="bg-cyan-400 mx-4 w-24">3</div>
+        </div>
+        <div class="flex flex-col">
+            <div class="bg-yellow-400 my-2">1</div>
+            <div class="bg-yellow-400 my-2">2</div>
+            <div class="bg-yellow-400 my-2">3</div>
+        </div>
+        <div class="flex flex-col-reverse">
+            <div class="bg-rose-600 my-2">1</div>
+            <div class="bg-rose-600 my-2">2</div>
+            <div class="bg-rose-600 my-2">3</div>
+        </div>
+        <div class="flex flex-nowrap m-4">
+            <div class="bg-green-400 mx-2 w-40">1</div>
+            <div class="bg-green-400 mx-2 w-40">2</div>
+            <div class="bg-green-400 mx-2 w-40">3</div>
+            <div class="bg-green-400 mx-2 w-40">4</div>
+            <div class="bg-green-400 mx-2 w-40">5</div>
+        </div>
+        <div class="flex flex-wrap m-4">
+            <div class="bg-green-400 mx-2 w-40">1</div>
+            <div class="bg-green-400 mx-2 w-40">2</div>
+            <div class="bg-green-400 mx-2 w-40">3</div>
+            <div class="bg-green-400 mx-2 w-40">4</div>
+            <div class="bg-green-400 mx-2 w-40">5</div>
+        </div>
+        <div class="flex flex-wrap-reverse m-4">
+            <div class="bg-green-400 mx-2 w-40">1</div>
+            <div class="bg-green-400 mx-2 w-40">2</div>
+            <div class="bg-green-400 mx-2 w-40">3</div>
+            <div class="bg-green-400 mx-2 w-40">4</div>
+            <div class="bg-green-400 mx-2 w-40">5</div>
+        </div>
+        <div class="flex m-4">
+            <div class="flex-none bg-red-600 mx-2">1</div>
+            <div class="flex-1 w-64 bg-red-600 mx-2">2</div>
+            <div class="flex-initial w-32 bg-red-600 mx-2">3</div>
+            <div class="flex-auto w-32 bg-red-600 mx-2">4</div>
+        </div>
+        <div class="flex m-4">
+            <div class="w-24 grow bg-orange-500 mx-2">1</div>
+            <div class="w-24 grow-0 bg-orange-500 mx-2">2</div>
+            <div class="w-24 grow bg-orange-500 mx-2">3</div>
+        </div>
+        <div class="flex m-4">
+            <div class="w-24 shrink bg-orange-500 mx-2">1</div>
+            <div class="w-24 shrink-0 bg-orange-500 mx-2">2</div>
+            <div class="w-24 bg-orange-500 mx-2">3</div>
+        </div>
+        <div class="flex m-4">
+            <div class="w-20 bg-amber-400 mx-2 order-3">1</div>
+            <div class="w-20 bg-amber-400 mx-2 order-last">2</div>
+            <div class="w-20 bg-amber-400 mx-2 order-none">3</div>
+            <div class="w-20 bg-amber-400 mx-2 order-first">4</div>
+            <div class="w-20 bg-amber-400 mx-2 order-1">5</div>
+        </div>
+        <div class="flex m-4 justify-normal">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 justify-start">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 justify-end">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 justify-center">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 justify-between">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 justify-around">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 justify-evenly">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 justify-stretch">
+            <div class="w-24 bg-lime-400 mx-2">1</div>
+            <div class="w-24 bg-lime-400 mx-2">2</div>
+            <div class="w-24 bg-lime-400 mx-2">3</div>
+        </div>
+        <div class="flex m-4 items-stretch">
+            <div class="bg-teal-600 w-24 mx-2 py-4">1</div>
+            <div class="bg-teal-600 w-24 mx-2 py-12">2</div>
+            <div class="bg-teal-600 w-24 mx-2 py-8">3</div>
+        </div>
+        <div class="flex m-4 items-start">
+            <div class="bg-teal-600 w-24 mx-2 py-4">1</div>
+            <div class="bg-teal-600 w-24 mx-2 py-12">2</div>
+            <div class="bg-teal-600 w-24 mx-2 py-8">3</div>
+        </div>
+        <div class="flex m-4 items-end">
+            <div class="bg-teal-600 w-24 mx-2 py-4">1</div>
+            <div class="bg-teal-600 w-24 mx-2 py-12">2</div>
+            <div class="bg-teal-600 w-24 mx-2 py-8">3</div>
+        </div>
+        <div class="flex m-4 items-center">
+            <div class="bg-teal-600 w-24 mx-2 py-4">1</div>
+            <div class="bg-teal-600 w-24 mx-2 py-12">2</div>
+            <div class="bg-teal-600 w-24 mx-2 py-8">3</div>
+        </div>
+        <div class="flex m-4 items-baseline">
+            <div class="bg-teal-600 w-24 mx-2 py-4">1</div>
+            <div class="bg-teal-600 w-24 mx-2 py-12">2</div>
+            <div class="bg-teal-600 w-24 mx-2 py-8">3</div>
+        </div>
+        <div class="flex items-stretch m-4 h-20">
+            <div class="bg-blue-600 w-24 mx-2">1</div>
+            <div class="bg-blue-600 w-24 mx-2 self-auto">2</div>
+            <div class="bg-blue-600 w-24 mx-2">3</div>
+        </div>
+        <div class="flex items-stretch m-4 h-20">
+            <div class="bg-blue-600 w-24 mx-2">1</div>
+            <div class="bg-blue-600 w-24 mx-2 self-start">2</div>
+            <div class="bg-blue-600 w-24 mx-2">3</div>
+        </div>
+        <div class="flex items-stretch m-4 h-20">
+            <div class="bg-blue-600 w-24 mx-2">1</div>
+            <div class="bg-blue-600 w-24 mx-2 self-end">2</div>
+            <div class="bg-blue-600 w-24 mx-2">3</div>
+        </div>
+        <div class="flex items-stretch m-4 h-20">
+            <div class="bg-blue-600 w-24 mx-2">1</div>
+            <div class="bg-blue-600 w-24 mx-2 self-center">2</div>
+            <div class="bg-blue-600 w-24 mx-2">3</div>
+        </div>
+        <div class="flex items-stretch m-4 h-20">
+            <div class="bg-blue-600 w-24 mx-2">1</div>
+            <div class="bg-blue-600 w-24 mx-2 self-stretch">2</div>
+            <div class="bg-blue-600 w-24 mx-2">3</div>
+        </div>
+        <div class="flex items-stretch m-4 h-20">
+            <div class="bg-blue-600 w-24 mx-2">1</div>
+            <div class="bg-blue-600 w-24 mx-2 self-baseline">2</div>
+            <div class="bg-blue-600 w-24 mx-2">3</div>
+        </div>
+    </body>
+</html>
